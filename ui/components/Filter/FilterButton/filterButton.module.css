@@ -1,0 +1,24 @@
+.container {
+  background-color: transparent;
+  width: 100%;
+}
+
+.filterButton {
+  background-color: white;
+  border: 3px solid #f00e0e;
+  border-radius: 3px;
+  color: #f00e0e;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 1em 2em 0 0;
+  padding: .3em .5em;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    display: none;
+  }
+}

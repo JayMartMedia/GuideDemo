@@ -1,0 +1,46 @@
+.container {
+  background:white;
+  /* hide by default on mobile view, clicking filter will open */
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.filterHeading {
+  border-bottom: 1px solid #00000020;
+  box-sizing: border-box;
+  clear: both;
+  margin-bottom: 0px;
+  padding: 0 0 .7em 0;
+  text-align: center;
+}
+
+.mobileCloseButton {
+  float: right;
+  margin: 1.5em 1.5em 0 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Breakpoint to go to desktop */
+@media screen and (min-width: 769px) {
+  /* Turn filter into sidebar */
+  .container {
+    border-right: 1px solid #00000020;
+    display: inline-block;
+    height: 100%;
+    max-width: 30em;
+    min-width: 15em;
+    position: initial;
+    width: 30%;
+  }
+
+  /* hide the mobile close button on desktop*/
+  .mobileCloseButton {
+    display: none;
+  }
+  /* hide */
+}

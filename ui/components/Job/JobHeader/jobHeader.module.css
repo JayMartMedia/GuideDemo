@@ -1,0 +1,82 @@
+.container {
+  border-bottom: 1px solid #00000020;
+  padding: 1em;
+}
+
+.jobTypePill {
+  background: green;
+  border-radius: 100em;
+  color:#000000aa;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0 .5em;
+  padding: .3em .6em;
+}
+
+.topLine {
+  display: flex;
+}
+
+.rateContainer {
+  display: inline-block;
+  align-self: center;
+  margin-left: auto;
+}
+
+.rateSymbol {
+  color: #000000a9;
+  position: relative;
+  top: -.5em;
+}
+
+.ratePrice {
+  font-size: 1.5em;
+}
+
+.rateSuffix {
+  color: #000000a9;
+  position: relative;
+  top: .1em;
+}
+
+.bottomLine {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.daysOfTheWeek {
+  display: inline-block;
+}
+
+.dayOfWeek {
+  background-color: white;
+  color: black;
+  border-radius: 100%;
+  display: inline-block;
+  font-weight: 600;
+  height: 1.8em;
+  line-height: 1.8em;
+  margin: 0;
+  text-align: center;
+  width: 1.8em;
+}
+
+.dayOfWeekSelected {
+  composes: dayOfWeek;
+  background-color: grey;
+  color: white;
+}
+
+.location {
+  color: #000000a9;
+  display: inline-block;
+  align-self: center;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    padding: 1em 2em;
+  }
+}
