@@ -24,4 +24,5 @@ yarn build
 yarn start
 ```
 The UI can be viewed at: http://localhost:3000
+
 Make sure to view both the desktop and mobile views!
