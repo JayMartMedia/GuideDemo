@@ -26,3 +26,16 @@ yarn start
 The UI can be viewed at: http://localhost:3000
 
 Make sure to view both the desktop and mobile views!
+
+## Screenshots
+### Mobile View
+Mobile list view
+
+![screenshot of mobile list view](./docs/images/mobile-list.png)
+
+Mobile filter view
+
+![screenshot of mobile filter view](./docs/images/mobile-filter.png)
+
+### Desktop View
+![screenshot of desktop view](./docs/images/desktop-list-and-filter.png)
