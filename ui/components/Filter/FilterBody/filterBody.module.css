@@ -27,7 +27,7 @@
   transform: scale(2.2);
 }
 
-.minimumRateFilter {
+.maximumRateFilter {
   display: flex;
 }
 

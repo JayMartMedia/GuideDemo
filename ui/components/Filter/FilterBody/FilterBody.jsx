@@ -66,12 +66,12 @@ function FilterBody ({
             />
           </label>
         </div>
-        <h3 className={styles.subHeading}>Minimum rate</h3>
-        <div className={styles.minimumRateFilter}>
+        <h3 className={styles.subHeading}>Maximum rate</h3>
+        <div className={styles.maximumRateFilter}>
           <span className={styles.rate}>${maxRate}/hr</span>
           <button className={styles.rateModifierButtonMinus} onClick={decrementmaxRate}>
             <Image
-              alt='Minus icon to decrease the minimum rate'
+              alt='Minus icon to decrease the maximum rate'
               height={45}
               src={minusIcon}
               width={45}
@@ -79,7 +79,7 @@ function FilterBody ({
           </button>
           <button className={styles.rateModifierButton} onClick={incrementmaxRate}>
             <Image
-              alt='Plus icon to increase the minimum rate'
+              alt='Plus icon to increase the maximum rate'
               height={45}
               src={plusIcon}
               width={45}
