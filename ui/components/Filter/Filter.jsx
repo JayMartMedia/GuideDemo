@@ -7,7 +7,7 @@ import FilterBody from './FilterBody'
 import { useLazyQuery } from '@apollo/client'
 import jobFilterQuery from '../../lib/sdk/jobs/jobFilterQuery'
 
-function Filter ({ setJobs, setError, setLoading }) {
+function Filter ({ setJobs, setError, setLoading, isJobSelected }) {
   const [maxRate, setMaxRate] = useState(45)
   const [selectedTypes, setSelectedTypes] = useState([])
   const containerRef = useRef()
@@ -65,9 +65,9 @@ function Filter ({ setJobs, setError, setLoading }) {
 
   return (
     <>
-      <FilterButton
+      {!isJobSelected && <FilterButton
         onClick={handleFilterButtonClick}
-      />
+      />}
       <div className={styles.container} ref={containerRef}>
         <button
           onClick={handleCloseFilterClick}
