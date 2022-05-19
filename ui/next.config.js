@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    GRAPHQL_API_URI: 'http://localhost:4000/graphql'
+    GRAPHQL_API_URI: 'https://guide-demo-js.herokuapp.com/graphql'
   }
 }
 
