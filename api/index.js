@@ -25,6 +25,8 @@ const root = {
   search: filterGuides
 };
 
+const port = process.env.PORT || 4000;
+
 const app = express();
 app.use(cors());
 app.use('/graphql', graphqlHTTP({
@@ -32,5 +34,5 @@ app.use('/graphql', graphqlHTTP({
   rootValue: root,
   graphiql: true,
 }));
-app.listen(4000);
+app.listen(port);
 console.log('Running a GraphQL API server at http://localhost:4000/graphql');
