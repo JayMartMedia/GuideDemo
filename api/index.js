@@ -28,7 +28,17 @@ const root = {
 const port = process.env.PORT || 4000;
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    // hosted
+    'https://guide-demo.vercel.app/',
+    // hosted test branches
+    // TODO: Move out and comment
+    /^(https:\/\/guide-demo)[\w\d-]+(\.vercel\.app)(\/.+$)*/
+  ],
+  optionsSuccessStatus: 200
+}));
 app.use('/graphql', graphqlHTTP({
   schema,
   rootValue: root,
