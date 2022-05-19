@@ -39,3 +39,4 @@ Mobile filter view
 
 ### Desktop View
 ![screenshot of desktop view](./docs/images/desktop-list-and-filter.png)
+
