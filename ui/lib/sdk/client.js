@@ -5,7 +5,8 @@ import {
 
 function getApolloClient () {
   return new ApolloClient({
-    uri: process.env.GRAPHQL_API_URI,
+    // TODO: do this properly
+    uri: process.env.HOSTED_GRAPHQL_API_URI || process.env.GRAPHQL_API_URI,
     cache: new InMemoryCache()
   })
 }
