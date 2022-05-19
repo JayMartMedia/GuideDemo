@@ -20,11 +20,11 @@ function JobContainer () {
   return (
     <ApolloProvider client={client}>
       <div className={styles.container}>
-        <Filter 
+        {!selectedJob && <Filter 
           setJobs={setJobs}
           setError={setError}
           setLoading={setLoading}
-        />
+        />}
         {
           selectedJob ? 
           <Job
