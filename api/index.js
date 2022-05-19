@@ -32,10 +32,10 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     // hosted
-    'https://guide-demo.vercel.app/',
+    'https://guide-demo-jaymartmedia.vercel.app',
     // hosted test branches
     // TODO: Move out and comment
-    /^(https:\/\/guide-demo)[\w\d-]+(\.vercel\.app)(\/.+$)*/
+    /^(https:\/\/guide-demo)[\w\d-]+(-jaymartmedia\.vercel\.app)(\/.+$)*/
   ],
   optionsSuccessStatus: 200
 }));
