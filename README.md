@@ -1,6 +1,8 @@
 # Guide Demo
 A responsive webpage for searching for climbing guides by climbing specialty and price
 
+Deployed on Vercel and Heroku: https://guide-demo-jaymartmedia.vercel.app/
+
 ## Requirements
 - Node.js v16.14.0 installed
 - Yarn installed
