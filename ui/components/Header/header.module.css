@@ -1,10 +1,18 @@
 .container {
   /* transparent border to reserve space and prevent jump on media query */
+  align-items: center;
   border-bottom: 1px solid transparent;
   box-shadow: 0px 1px 15px 2px #00000030;
+  display: flex;
   padding: .4em 1em;
   width: 100%;
   z-index: 2;
+}
+
+.headerText {
+  display: inline-block;
+  margin: 0;
+  margin-left: 1em;
 }
 
 /* Breakpoint to go to desktop */

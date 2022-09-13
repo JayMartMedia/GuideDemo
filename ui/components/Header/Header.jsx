@@ -12,6 +12,9 @@ function Header () {
         height={45}
         width={45}
       />
+      <h1
+        className={styles.headerText}
+      >Find a Climbing Guide!</h1>
     </div>
   )
 }
