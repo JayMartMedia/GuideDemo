@@ -4,3 +4,8 @@
   margin: 1em;
   cursor: pointer;
 }
+
+.container.selected {
+  flex-grow: 1;
+  width: 70%;
+}
