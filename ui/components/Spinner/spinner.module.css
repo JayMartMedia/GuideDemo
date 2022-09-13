@@ -6,6 +6,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    animation: opacity 1s linear both;
 }
 
 svg.spinner {
@@ -37,5 +38,14 @@ svg.spinner circle {
     100% {
         stroke-dashoffset: 26.4 /*0.66 * $spinnerSize*/;
         transform: rotate(1080deg);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

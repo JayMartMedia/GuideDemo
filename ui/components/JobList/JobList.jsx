@@ -5,7 +5,7 @@ import styles from './jobList.module.css'
 
 function JobList ({ jobs = [], error, loading, setSelectedJob }) {
 
-  if(error) return <pre>{JSON.stringify(error,null,2)}</pre>
+  if(error && !loading) return <pre>{JSON.stringify(error,null,2)}</pre>
 
   return (
     <div className={styles.container}>
