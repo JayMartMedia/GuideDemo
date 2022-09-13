@@ -14,7 +14,10 @@ function Job ({ job, setSelectedJob, isSelected}) {
     }
   }
   return (
-    <div className={styles.container} onClick={handleJobClick}>
+    <div
+      className={`${styles.container} ${isSelected ? styles.selected: ''}`}
+      onClick={handleJobClick}
+    >
       <JobHeader
         type={type}
         city={city}
@@ -22,7 +25,10 @@ function Job ({ job, setSelectedJob, isSelected}) {
         schedule={schedule}
         payRate={payRate}
       />
-      <JobBody description={description} isSelected={isSelected} />
+      <JobBody
+        description={description}
+        isSelected={isSelected}
+      />
     </div>
   )
 }

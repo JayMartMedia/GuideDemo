@@ -4,3 +4,11 @@
   margin: 1em;
   cursor: pointer;
 }
+
+/* Breakpoint to go to desktop */
+@media screen and (min-width: 769px) {
+  .container.selected {
+    flex-grow: 1;
+    width: 70%;
+  }
+}
